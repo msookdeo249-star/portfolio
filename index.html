@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High School Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>My High School Portfolio</h1>
+      <p id="greeting"></p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#labs">Labs/Intro to Unity</a></li>
+        <li><a href="#congressional">Congressional App Challenge</a></li>
+        <li><a href="#past-portfolios">Past Portfolios</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">🌞 Toggle Theme</button>
+  </header>
+
+  <section id="aboutme">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm a high school student passionate about technology, coding, and creativity.
+      I enjoy building apps, games, and projects that solve problems and inspire others.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project" data-title="Web Development" data-desc="A task management web app built using HTML, CSS, and JS.">
+        <h3>Project 1: Web Development</h3>
+        <p>Click to learn more.</p>
+      </div>
+      <div class="project" data-title="Mobile Fitness Tracker" data-desc="A mobile app built with React Native for tracking workouts and progress.">
+        <h3>Project 2: Mobile App</h3>
+        <p>Click to learn more.</p>
+      </div>
+      <div class="project" data-title="Unity Game" data-desc="A 2D platformer game made with Unity as part of my learning journey.">
+        <h3>Project 3: Game Development</h3>
+        <p>Click to learn more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="labs">
+    <h2>Labs/Intro to Unity</h2>
+    <ul>
+      <li>Lab 1: Building a Basic 2D Platformer</li>
+      <li>Lab 2: Implementing 3D Physics in Unity</li>
+      <li>Lab 3: Intro to Unity Scripting</li>
+    </ul>
+  </section>
+
+  <section id="congressional">
+    <h2>Congressional App Challenge</h2>
+    <p>
+      I participated in the 2024 Congressional App Challenge with a team that developed
+      a civic engagement app to connect students with local volunteering opportunities.
+    </p>
+  </section>
+
+  <section id="past-portfolios">
+    <h2>Past Portfolios</h2>
+    <ul>
+      <li><a href="#">Portfolio 2023</a></li>
+      <li><a href="#">Portfolio 2022</a></li>
+      <li><a href="#">Portfolio 2021</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> My High School Portfolio</p>
+  </footer>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
